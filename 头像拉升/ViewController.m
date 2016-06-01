@@ -80,6 +80,7 @@
         _headImageView.bounds = CGRectMake(0, 0, 70, 70);
         _headImageView.layer.cornerRadius = CGRectGetWidth(_headImageView.bounds)/2;
         _headImageView.center = CGPointMake(self.titleView.center.x, 20);
+        _headImageView.clipsToBounds = YES;
     }
     return  _headImageView;
 }
